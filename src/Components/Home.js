@@ -43,7 +43,7 @@ const Home = () => {
             I am fluent in <b>C++</b> and have slight knowledge of <b>Java</b> and am working on a few 
             projects in the <b>MERN</b> stack.<br />
             I plan to learn <b>Next.js</b> and<b> Typescript</b> in the near future. <br /><br />
-            Also, I love <b>Reading</b> <FaBook style={{scale:"1.5", rotate:"15deg"}}/>   
+            Also, I love <b>Writing</b> <FaBook style={{scale:"1.5", rotate:"15deg"}}/>   
           </p>
         </div>
         <Tilt>
