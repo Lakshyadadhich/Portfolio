@@ -4,13 +4,15 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import './Contact.css';
 
-
-
 const Contact = () => {
     const form = useRef();
     const [done, setDone] = useState(false);
     const [notDone, setNotDone] = useState(false);
-    const [formData, setFormData] = useState({});
+    const [formData, setFormData] = useState({
+        from_name: '',
+        reply_to: '',
+        message: ''
+    });
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -36,6 +38,14 @@ const Contact = () => {
                     (result) => {
                         console.log(result.text);
                         setDone(true);
+                        // Clear form fields
+                        setFormData({
+                            from_name: '',
+                            reply_to: '',
+                            message: ''
+                        });
+                        // Optionally reset the form as well
+                        form.current.reset(); 
                     },
                     (error) => {
                         console.log(error.text);
@@ -49,7 +59,7 @@ const Contact = () => {
             <Row>
                 <Col md={6} className="c-left">
                     <h1>Get in Touch</h1>
-                    <h1 className="yellow " >Contact me</h1>
+                    <h1 className="yellow">Contact me</h1>
                 </Col>
                 <Col md={6} className="c-right">
                     <form ref={form} onSubmit={sendEmail}>
@@ -58,6 +68,7 @@ const Contact = () => {
                             name="from_name"
                             className="user"
                             placeholder="Name"
+                            value={formData.from_name} // Add value for controlled input
                             onChange={handleChange}
                         />
                         <input
@@ -65,12 +76,14 @@ const Contact = () => {
                             name="reply_to"
                             className="user"
                             placeholder="Email"
+                            value={formData.reply_to} // Add value for controlled input
                             onChange={handleChange}
                         />
                         <textarea
                             name="message"
                             className="user"
                             placeholder="Message"
+                            value={formData.message} // Add value for controlled input
                             onChange={handleChange}
                         />
                         <span className="not-done">{notDone && "Please, fill all the input fields"}</span>
@@ -80,8 +93,6 @@ const Contact = () => {
                 </Col>
                 {/* <Social/> */}
             </Row>
-
-          
         </Container>
     );
 };
