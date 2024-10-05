@@ -14,8 +14,8 @@ const About = () => {
             I'm a <b>MERN stack web developer</b> and I have recently completed my <b>BTech in Computer Science Engineering. </b><br/><br/>
             I have done an internship as a <b>React JS Intern</b> at Celebal Technology which is a software services company.
             I love to create original projects with beautiful designs, you can check out some of my work in the projects section.<br/><br/>
-            I am <b>open</b> to new collaborations or work where I can contribute and grow. Feel free to connect with me, links are in the footer.<br/>
-            Apart from coding I love to do poetry, you can check out some of my videos here <a href="https://www.instagram.com/lakshyaa_writes?igsh=MjM3MzB6YTVhcmQ0" target='_blank' rel="noreferrer">Instagram.</a>
+            I am <b>looking forward</b>  to work on interesting and challenging projects as a developer and create something that's innovative and proud worthy. Feel free to connect with me, links are in the footer.<br/>
+            Apart from coding I like to pen down my thoughts as poetry, you can check out some of my videos here <a href="https://www.instagram.com/lakshyaa_writes/profilecard/?igsh=MjM3MzB6YTVhcmQ0" target='_blank' rel="noreferrer">Instagram.</a>
           </p>
         </div>
 

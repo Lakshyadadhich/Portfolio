@@ -40,7 +40,7 @@ const Home = () => {
             that impacts lives. 
             I want to do work that challenges me as a developer & work that I can 
             be proud of.<br /><br />
-            I am fluent in <b>C++</b> and know a bit of <b>Java</b> and am working on a few 
+            I am fluent in <b>C++</b> and have slight knowledge of <b>Java</b> and am working on a few 
             projects in the <b>MERN</b> stack.<br />
             I plan to learn <b>Next.js</b> and<b> Typescript</b> in the near future. <br /><br />
             Also, I love <b>Reading</b> <FaBook style={{scale:"1.5", rotate:"15deg"}}/>   
