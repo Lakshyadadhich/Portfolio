@@ -1,5 +1,5 @@
 import React from 'react';
-import Skills from './Skills.js';
+import Skills from './Skills.jsx';
 import Tilt from 'react-parallax-tilt';
 import profile from '../images/profile.png'
 

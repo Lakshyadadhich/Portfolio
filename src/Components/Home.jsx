@@ -1,7 +1,7 @@
 import React from 'react';
 import Lottie from  "lottie-react";
 import SpaceBoy from "../LottieFiles/SpaceBoy.json";
-import Typed from "./Typed.js";
+import Typed from "./Typed.jsx";
 import Tilt from 'react-parallax-tilt';
 import { FaBook } from "react-icons/fa"; 
 import bookman from '../images/bookman.png';
